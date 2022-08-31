@@ -73,7 +73,7 @@ class Gui():
                         self.render_cell(x, y, self.get_colour(Maze.START))
                         set_start = True
                     elif event.key == pygame.K_e:
-                        if set_start:
+                        if set_end:
                             self.render_cell(*self.maze.get_end_pos(), self.get_colour(Maze.EMPTY))
                         self.maze.set_cell(x, y, Maze.END)
                         self.render_cell(x, y, self.get_colour(Maze.END))
